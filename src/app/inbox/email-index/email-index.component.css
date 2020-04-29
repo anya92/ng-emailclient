@@ -1,0 +1,27 @@
+.item a {
+  color: black;
+}
+
+a.active {
+  position: relative;
+}
+
+
+a.active::before {
+  content: '>';
+  position: absolute;
+  font-size: 20px;
+  left: -20px;
+  top: 6px;
+}
+
+.content {
+  width: 90%;
+}
+
+.trim {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
